@@ -19,18 +19,18 @@ function handleEmail(value) {
 function handleUsername(value) {
   console.log(value)
   data['username'] = value
-  return value
 }
 function handlePassword(value) {
   console.log(value)
   data['password'] = value
 }
 function handleCPassword(value) {
-  console.log(value)
+  console.log("handle c password", value, data)
   if (data['password'] != value){
-    document.getElementById('confirm-password') = 'password not same'
+    let a = document.getElementById('confirm-password')
+    console.log(a) 
+    return   
   }
-  return value
 }
 function handleBirthday(value) {
   console.log(value)
@@ -43,7 +43,7 @@ function handleSubmit(){
     if(val == ""){
       console.log("masuk")
       let elm = document.querySelector("container-warning")
-      elm.setAttribute =""
+      elm.removeAttribute = "hidden"
       console.log("masuk sini")
       return
     }
