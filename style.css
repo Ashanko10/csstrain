@@ -33,11 +33,12 @@
 }
 
 .hero{
-  padding: 0;
+  padding: 10px;
   background-image: url('./20230601-ReefAwareness_ROW8415751670_UHD.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  /* margin-bottom: 10px; */
 
   /* ini saya pelajari lagi */
   display: flex;
@@ -78,11 +79,10 @@
 li{
   list-style: none;
 }
-.form-container {
-  margin: 10px;
-  width: 18%;
-  margin-bottom: 80px;
-  min-height: 100vh;   ;
+.form-container {  
+  width: 20%;
+  padding: 20px;
+  margin-bottom: 80px;  
   display: flex;
   flex-direction: column;
   justify-content: center;
