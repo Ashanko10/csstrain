@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="./script.js"></script>
 </head>
 <body>
   <div class="header">
@@ -46,17 +47,20 @@
     </div> -->
     <div class="form-container">
       <label for="email">email</label>
-      <input type="email">
-      <label for="username">username</label>
-      <input type="text">
-      <label for="password">password</label>
-      <input type="text">
-      <label for="confirm-password">confirm password</label>
-      <input type="text">
-      <label for="birthday">birthday</label>
-      <input type="date">
+      <input id="email" type="email" onchange="handleEmail(value)" value="">
+      <label for="username" >username</label>
+      <input type="text" onchange="handleUsername(value)">
+      <label for="password" >password</label>
+      <input type="text" onchange="handleCPassword(value)">
+      <label for="confirm-password" id="confirm-password">confirm password</label>
+      <input type="text" onchange="handleCPassword(value)">
+      <label for="birthday" >birthday</label>
+      <input type="date" onchange="handleBirthday(value)">
       <div class="container-submit">
-        <div class="submit">Submit</div>
+        <div class="submit" onclick="handleSubmit()">Submit</div>
+      </div>
+      <div class="container-warning">
+        <div class="warning">perbaiki data anda terlebih dahulu</div>
       </div>
     </div>
   </div>
