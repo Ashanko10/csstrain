@@ -1,0 +1,133 @@
+.body{
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: 0 auto;
+}
+
+.header {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: space-between;
+}
+.header > .logo-container {
+  width: 20%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;  
+}
+.logo-container > img {
+  width: 100px;
+  height: 70px;
+  border-radius: 20px;  
+}
+.header > .items {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  color: white;
+}
+
+.hero{
+  padding: 0;
+  background-image: url('./20230601-ReefAwareness_ROW8415751670_UHD.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  /* ini saya pelajari lagi */
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.container-section{
+  background-color: rgba(51,51,50,0.5);
+  display: flex;
+  width: 100%;  
+  justify-content:space-around;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container-section > .left{  
+  width: 20%;
+  margin: 20px;
+}
+.container-section > .right {
+  width: 80%;
+  margin: 20px;
+}
+/* yang pake koma ini juga belajar */
+.left > ul, .right > ul  {
+  background-color: aqua;
+  border-radius:20px;
+  width: fit-content;
+  padding: 25px;
+}
+.hero > ul {
+  list-style: none;
+  margin: 0 auto;
+  margin-right: 20px;
+}
+li{
+  list-style: none;
+}
+.form-container {
+  margin: 10px;
+  width: 18%;
+  margin-bottom: 80px;
+  min-height: 100vh;   ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: coral;
+  padding: 10px;
+  border-radius: 10px;  
+  /* yang saya pelajari agar tidak ketutupan footer */
+}
+
+
+.form-container > label, input {
+  width: 150px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.container-submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.container-submit > .submit {
+  text-align: center;
+  padding: 20px;
+  background-color: chartreuse;
+  width: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3 ease;
+}
+.container-submit > .submit:hover{
+  background-color: aqua;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background-color: aqua;
+  width: 100%;
+}
+.footer > div{
+  margin: 20px;
+}
