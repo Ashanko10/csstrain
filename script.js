@@ -28,6 +28,7 @@ function handleCPassword(value) {
   console.log("handle c password", value, data)
   if (data['password'] != value){
     let a = document.getElementById('confirm-password')
+    a = "wrong password"
     console.log(a) 
     return   
   }
